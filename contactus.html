@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <style>
+        .btn{
+            margin: 5px 12px;
+            padding: 11px 13px;
+            outline: none;
+            width: 100px;
+            height: 35px;
+        }
+    header{
+        display: block;
+    }
+    .navbar{
+        background-color: rgb(68 53 53);
+        border-radius: 30px;
+        position: sticky;
+        border: 4px solid grey;
+        top: 0%;
+
+        left: 0%;
+        z-index: 1;
+    }
+    .navbar ul{
+        overflow: auto;
+        margin: -4px 4px;
+    }
+    .navbar li{
+        float: left;
+        list-style: none;
+        margin: 10px 10px;
+    }
+    .navbar li a{
+        padding: 0px 11px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .navbar li a:hover{
+        color: rgb(235, 217, 217);
+
+
+        text-decoration: underline;
+    }
+    .navbar li a:active{
+        color: rgb(65, 243, 85);
+        text-decoration: underline;
+    }
+</style>
+</head>  
+<body style="background-color: khaki;">
+    <nav class="navbar">
+        <ul>
+            <li class="item" id="home"><a href="index.html" target="_blank">Home</a></li>
+            <li class="item" id="item2"><a href="about.html" target="_blank">About</a></li>
+            <li class="item" id="item3"><a href="gallery.html" target="_blank">Gallery</a></li>
+            <li class="item" id="item5"><a href="contactus.html" target="_blank">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="r2">
+        <div class="Contact Us">
+            <div class="menu">
+                <h1 align="center"><b><u>CONTACT US</u></b></h1>     
+                  
+    <address>
+        <p><b>Phone no.</b>: 8837855935</p>
+        <p><b>Email</b>: lalitkumar1122@gmail.com </p>
+        <p><b>Visit Us</b>: Sarpanch Colony, Jamalpur,Ludhiana,Punjab(141010)</p>
+    </address>
+        <form style="background-color: sandybrown; margin-right:500px; " action="form.php" method="post" >
+
+            <fieldset >
+            <legend style="text-align: center; font-size:30px;">User Information</legend>
+             First Name
+            <input type="text" name="fname" placeholder="Your first name" required><br><br>
+             Last Name
+            <input type="text" name="lname" placeholder="Your last name" required><br><br>
+            Mobile Number
+            <input type="text" name="f1" placeholder="Your mobile number"required><br><br>
+            Date Of Birth
+            <input type="date" name="date" value="date"required ><br><br>
+            Gender
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Other">Other<br><br>
+            Email 
+            <input type="email" name="email" placeholder="Enter Your Email"required><br><br>
+            Country
+            <select>
+                <option>India</option>
+                <option>America</option>
+                <option>Germany</option>
+                <option>Australia</option>
+                <option>Pakistan</option>
+                <option>China</option> <br>
+
+            </select><br><br>
+
+            <input class="btn" type="submit" name="" value="Submit now">
+            <input class="btn" type="reset" name="" value="Reset">
+           </fieldset>
+        </form>
+    </body>
+    </html>
